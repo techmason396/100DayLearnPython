@@ -1,5 +1,6 @@
 # sử dụng *args giống như toán tử ... của JS
 def add(*args):
+    # print(args)
     sum_result = 0
     for n in args:
         sum_result += n
@@ -30,5 +31,12 @@ class Car:
 
 nissan = Car(name="Nissan", model="PH200")
 
-print(nissan.name)
-print(nissan.model)
+# print(nissan.name)
+# print(nissan.model)
+
+
+def check_string(*args):
+    print(args)
+
+
+check_string("trung", "vui", "quang")
